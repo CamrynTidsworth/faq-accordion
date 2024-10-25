@@ -1,0 +1,89 @@
+:root {
+    --white: hsl(0, 0%, 100%);
+    --light-pink: hsl(275, 100%, 97%);
+    --grayish-purple: hsl(292, 16%, 49%);
+    --dark-purple: hsl(292, 42%, 14%);
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--light-pink);
+    font-family: "Work Sans", sans-serif;
+}
+
+main {
+    width: min(300px, 85%);
+    background-color: var(--white);
+    padding: 1.5rem;
+    border-radius: 2.5%;
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+h1 {
+    margin-left: 1rem;
+    margin-block: 0.2rem;
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--dark-purple);
+}
+
+.accordion {
+    border: none;
+    background-color: var(--white);
+    font-family: "Work Sans";
+    color: var(--dark-purple);
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: left;
+    padding: 0;
+}
+
+.active, .accordion:hover {
+    color: var(--grayish-purple);
+}
+
+.panel {
+    font-size: 1rem;
+    color: var(--grayish-purple);
+}
+
+hr {
+    border: 0.5px solid var(--grayish-purple);
+}
+
+/*
+.attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+*/
+
+
+
+/* MEDIA QUERIES */
+
+@media only screen and (min-width: 374.9px) {
+    body {
+        background-image: url(assets/images/background-pattern-desktop.svg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center top;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    body {
+        background-image: url(assets/images/background-pattern-mobile.svg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center top;
+    }
+}
