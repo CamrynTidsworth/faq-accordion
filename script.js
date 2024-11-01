@@ -1,29 +1,24 @@
 
-var acc = document.getElementsByClassName("accordion");
-var i;
 
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    /* Toggle between adding and removing the "active" class,
-    to highlight the button that controls the panel */
-    this.classList.toggle("active");
-
-    /* Toggle between hiding and showing the active panel */
-    var panel = this.nextElementSibling;
-    if (panel.style.display === "block") {
-      panel.style.display = "none";
-    } else {
-      panel.style.display = "block";
-    }
-  });
-}
-
-
-/*
-const accordion = document.querySelectorAll('.accordion');
-
-accordion.forEach((accordion) => {
-    accordion.addEventListener('click', () => {
-        accordion.classList.toggle
+const accordions = document.querySelectorAll('.accordion');
+accordions.forEach(accordion => {
+    accordion.addEventListener('click', e => {
+        let accordionBtn = accordion.querySelector('button');
+        accordion.classList.toggle('active');
+        if (accordionBtn.textContent === '-') {
+            accordionBtn.textContent = '+';
+        } else {
+            accordionBtn.textContent = '-';
+        }
     })
 })
+
+function imageFun() {
+    var Image_Id = document.getElementById('plus-icon');
+    if (Image_Id.src.match("icon-plus.svg")) {
+        Image_Id.src = "icon-minus.svg";
+    }
+    else {
+        Image_Id.src = "icon-plus.svg";
+    }
+}

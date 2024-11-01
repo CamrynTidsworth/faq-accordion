@@ -48,13 +48,31 @@ h1 {
     padding: 0;
 }
 
-.active, .accordion:hover {
-    color: var(--grayish-purple);
+.accordion-header {
+    font-family: "Work Sans";
+    color: var(--dark-purple);
+    font-size: 0.8rem;
+    font-weight: 600;
+    display: flex;
+}
+
+button {
+    border: none;
+    background-color: var(--white);
 }
 
 .panel {
     font-size: 1rem;
     color: var(--grayish-purple);
+    display: none;
+}
+
+.accordion-header:hover {
+    color: var(--grayish-purple);
+}
+
+.accordion.active .panel {
+    display: block;
 }
 
 hr {
