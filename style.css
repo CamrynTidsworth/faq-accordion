@@ -6,7 +6,7 @@
 }
 
 body {
-    height: 100vh;
+    min-height: 100vh;
     margin: 0;
     padding: 0;
     display: flex;
@@ -21,6 +21,7 @@ main {
     background-color: var(--white);
     padding: 1.5rem;
     border-radius: 10px;
+    margin-block: 0.8rem;
 }
 
 .head {
@@ -30,9 +31,9 @@ main {
 }
 
 h1 {
-    margin-left: 1rem;
+    margin-left: 1.5rem;
     margin-block: 0.2rem;
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 700;
     color: var(--dark-purple);
 }
@@ -71,6 +72,7 @@ button:hover {
     color: var(--grayish-purple);
     font-weight: 400;
     display: none;
+    line-height: 1.5rem;
 }
 
 .accordion-header:hover {
@@ -85,13 +87,6 @@ button:hover {
 hr {
     border: 0.5px solid var(--grayish-purple);
 }
-
-/*
-.attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-*/
-
-
 
 /* MEDIA QUERIES */
 
