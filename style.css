@@ -17,7 +17,7 @@ body {
 }
 
 main {
-    width: clamp(300px, 50%, 1000px);
+    width: clamp(300px, 50%, 500px);
     background-color: var(--white);
     padding: 1.5rem;
     border-radius: 10px;
