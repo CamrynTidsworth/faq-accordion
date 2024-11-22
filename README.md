@@ -46,7 +46,7 @@ Users should be able to:
 
 ### What I learned
 
-This was my first time using Javascript in a project. While I suspect that my code can be improved in several ways, I am happy that I was able to make the accordion work with Javascript.
+This was my first time using Javascript in a project. I'm happy that I was able to make the accordion work with Javascript.
 
 ```js
 let accordions = document.querySelectorAll('.accordion');
@@ -66,7 +66,7 @@ body {
 
 ### Continued development
 
-I definitely plan to continue refining my Javascript skills. While the accordion technically works, the plus and minus buttons break easily and I suspect that there is a more concise way to write the functionality that I needed for the buttons. I have yet to make my code work with keyboard shortcuts so I plan to learn how to do that as well. 
+I definitely plan to continue refining my Javascript skills. 
 
 I am also continuing on my responsive design journey with CSS. 
 
